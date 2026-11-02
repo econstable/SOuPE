@@ -1,0 +1,58 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "soupe"
+version = "0.1.0"
+description = "QuTiP-based Stevens operator construction, Euler rotations, and LaTeX checks."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "BSD-3-Clause"
+license-files = ["LICENSE"]
+authors = [
+    { name = "E. Constable" }
+]
+dependencies = [
+    "numpy>=1.26,<3",
+    "qutip>=5.2,<6",
+]
+
+[project.scripts]
+soupe = "soupe.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/econstable/SOuPE"
+Repository = "https://github.com/econstable/SOuPE"
+Documentation = "https://github.com/econstable/SOuPE/tree/main/docs"
+Issues = "https://github.com/econstable/SOuPE/issues"
+Changelog = "https://github.com/econstable/SOuPE/releases"
+
+[dependency-groups]
+dev = [
+    "ruff>=0.8",
+    "pycodestyle>=2.12",
+]
+
+[tool.ruff]
+line-length = 79
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/soupe"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/src",
+    "/examples",
+    "/docs",
+    "/README.md",
+    "/CONTRIBUTING.md",
+    "/pyproject.toml",
+    "/LICENSE",
+    "/uv.lock",
+    "/CITATION.cff",
+]

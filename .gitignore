@@ -1,0 +1,26 @@
+# Environments and Python caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Build, generated compilation and coverage
+/dist/
+/build/
+*.egg-info/
+qutip_coeffs_*/
+.coverage
+.coverage.*
+htmlcov/
+
+# OS/editor temporary files
+.DS_Store
+*:Zone.Identifier
+*.swp
+*.swo
+*~
+
+# Generated results
+/output/

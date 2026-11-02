@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use SOuPE in your research, please cite this software."
+type: software
+title: "SOuPE: a Stevens Operator Utility Package for Everyone"
+authors:
+  - family-names: Constable
+    given-names: E.
+version: "0.1.0"
+license: BSD-3-Clause
+repository-code: "https://github.com/econstable/SOuPE"
+url: "https://github.com/econstable/SOuPE"

@@ -1,0 +1,108 @@
+{
+  "source": {
+    "citation": "Alexanian et al., Phys. Rev. B 107, 224404 (2023)",
+    "url": "https://doi.org/10.1103/PhysRevB.107.224404",
+    "parameters": "Supplementary Eq. (1), Tables I-IV and VII",
+    "g_factor": "Effective g=1.35 from Alexanian thesis, section V.3.2.1; https://hal.science/tel-03668858v1."
+  },
+  "ion": "Tb3+",
+  "J": 6,
+  "g_factor": 1.35,
+  "crystal_field": {
+    "convention": "wybourne",
+    "unit": "meV",
+    "coefficients": [
+      {
+        "rank": 2,
+        "order": 0,
+        "component": null,
+        "value": 51.4
+      },
+      {
+        "rank": 4,
+        "order": 0,
+        "component": null,
+        "value": 295
+      },
+      {
+        "rank": 4,
+        "order": 3,
+        "component": "c",
+        "value": 114
+      },
+      {
+        "rank": 6,
+        "order": 0,
+        "component": null,
+        "value": 64.6
+      },
+      {
+        "rank": 6,
+        "order": 3,
+        "component": "c",
+        "value": -84.2
+      },
+      {
+        "rank": 6,
+        "order": 6,
+        "component": "c",
+        "value": 129
+      }
+    ],
+    "theta": {
+      "2": -0.010101010101010102,
+      "4": 0.0001224364860728497,
+      "6": -1.1212132424253636e-06
+    }
+  },
+  "euler_unit": "degrees",
+  "sites": [
+    {
+      "label": "1",
+      "euler_angles": [
+        45,
+        54.735610317245346,
+        120
+      ]
+    },
+    {
+      "label": "2",
+      "euler_angles": [
+        -45,
+        125.26438968275465,
+        -60
+      ]
+    },
+    {
+      "label": "3",
+      "euler_angles": [
+        135,
+        125.26438968275465,
+        -60
+      ]
+    },
+    {
+      "label": "4",
+      "euler_angles": [
+        -135,
+        54.735610317245346,
+        120
+      ]
+    }
+  ],
+  "static_field": {
+    "direction": [
+      1,
+      1,
+      1
+    ],
+    "magnitude_T": 0
+  },
+  "field_sweep": {
+    "start_T": 0,
+    "stop_T": 15,
+    "points": 151,
+    "output_unit": "cm^-1",
+    "excited_levels": 4
+  }
+}
